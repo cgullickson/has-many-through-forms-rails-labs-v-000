@@ -9,7 +9,7 @@
 <ul>
   
 
-<% @post.comments.each do |comment| %>
+<% @post.comments.each do |c| %>
 
   <li>
     <%= c.user.username %> says: <%= c.content %>
