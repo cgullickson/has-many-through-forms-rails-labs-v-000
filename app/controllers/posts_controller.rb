@@ -9,6 +9,8 @@ class PostsController < ApplicationController
 
   def new
     @post = Post.new
+    @comment = @post.comments.build
+    @user = @comment.build_user
   end
 
   def create
