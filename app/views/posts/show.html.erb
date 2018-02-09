@@ -1,7 +1,8 @@
 <h1><%= @post.title %></h1>
 
 <% @post.categories.each do |cat| %>
-  <h2> <%= cat.name %></h2>
+  <h2> <%= cat.name %> </h2>
+<%end%>
 <%= @post.content %>
 
 <% @comments.each do |comment| %>
