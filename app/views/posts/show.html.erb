@@ -1,2 +1,8 @@
-<%= @post.title %>
+<h1><%= @post.title %></h1>
+
+<% @post.categories.each do |cat| %>
+  <h2> <%= cat.name %></h2>
 <%= @post.content %>
+
+<% @comments.each do |comment| %>
+  <%
